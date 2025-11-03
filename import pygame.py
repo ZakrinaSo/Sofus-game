@@ -50,9 +50,10 @@ pygame.time.set_timer(vrag_timer, 1700)
 gameplay = True
 victory = False  # Флаг победы
 
+#Нвдпись поражения
 label = pygame.font.Font("/Users/sofiyaz/Downloads/Игра/шрифт/Kablammo-Regular-VariableFont_MORF.ttf", 30)
-lose_label= label.render("Теперь ты мой раб :(", False, (255, 0, 0)) 
-restart_label= label.render("Проиграть еще раз", True, (55, 10, 20)) 
+lose_label= label.render("Проигрыш :(", False, (255, 0, 0)) 
+restart_label= label.render("Попробовать еще раз", True, (55, 10, 20)) 
 restart_label_rect = restart_label.get_rect(topleft=(200, 150))
 
 # Добавляем надпись победы
